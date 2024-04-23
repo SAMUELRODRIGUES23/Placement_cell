@@ -1,0 +1,21 @@
+</style>
+<body>
+<table border="2">
+<tr>
+<th>NAME</th>
+<th>EMAIL</th>
+
+<th>EDITING</th>
+<th>EDITING</th>
+
+</tr>
+
+{% for user in userDetails %}
+<tr>
+    <td>{{user[0]}}</td>
+    <td>{{user[1]}}</td>
+    
+    <td>  <button style="background-color: green;color:white ;"  onclick="document.location='/update/{{user.0}}'">EDIT</button></td>
+    <td>  <button   style="background-color: red;color: white;" onclick="document.location='/update/{{user.0}}'">DELETE</button></td>
+
+</tr>

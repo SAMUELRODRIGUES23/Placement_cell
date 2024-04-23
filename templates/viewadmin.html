@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Cards</title>
+</head>
+
+<style type="text/css">
+
+
+*{
+ margin: 0px;
+ padding: 0px;
+}
+body{
+ font-family: arial;
+}
+.main{
+
+ margin: 2%;
+}
+
+.card{
+     width: 20%;
+     display: inline-block;
+     box-shadow: 2px 2px 20px black;
+     border-radius: 5px; 
+     margin: 2%;
+    }
+
+.image img{
+  width: 100%;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  
+
+ 
+ }
+
+.title{
+ 
+  text-align: center;
+  padding: 10px;
+  
+ }
+
+h1{
+  font-size: 20px;
+ }
+
+.des{
+  padding: 3px;
+  text-align: center;
+ 
+  padding-top: 10px;
+        border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+button{
+  margin-top: 40px;
+  margin-bottom: 10px;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding:10px;
+}
+button:hover{
+  background-color: black;
+  color: white;
+  transition: .5s;
+  cursor: pointer;
+}
+
+</style>
+<body>
+   {% if username %}
+      <H1>Hello, {{username}}.WELCOME!<a href="/logout">Logout</a></H1>
+   {% endif %}
+
+  <div class="main">
+
+    <!--cards -->
+   
+   <div class="card">
+   
+   <div class="image">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg/1199px-Gfp-missouri-st-louis-clubhouse-pond-and-scenery.jpg">
+   </div>
+   <div class="title">
+    <h1>
+   VIEW DETAILS</h1>
+   </div>
+   <div class="des">
+    <p>Computer,IT,ETC,MECHANICAL</p>
+   <button onclick="document.location='/view'">VIEW</button>
+   </div>
+   </div>
+ 
+   
+   
+  
+   
+   
+      <div class="card">
+   
+         <div class="image">
+            <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+         </div>
+         <div class="title">
+          <h1>RESPONSES</h1>
+         </div>
+         <div class="des">
+          <p>SHOW RESPONSES</p>
+         <button   onclick="document.location='/response'">VIEW</button>
+         </div>
+         </div>
+
+
+         <div class="card">
+   
+          <div class="image">
+             <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+          </div>
+          <div class="title">
+           <h1>
+        POST</h1>
+          </div>
+          <div class="des">
+           <p>POST AN OPPORTUNITY</p>
+          <button  onclick="document.location='/details'">VIEW</button>
+          </div>
+          </div>
+
+          
+         <div class="card">
+   
+          <div class="image">
+             <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+          </div>
+          <div class="title">
+           <h4>
+          VIEW ADMINS</h4>
+          </div>
+          <div class="des">
+           <p>GRAB YOUR OPPURTUNITY</p>
+          <button   onclick="document.location='/users'">VIEW</button>
+          </div>
+          </div>
+
+          <div class="card">
+   
+            <div class="image">
+               <img src="https://cdn.pixabay.com/photo/2018/01/09/03/49/the-natural-scenery-3070808_1280.jpg">
+            </div>
+            <div class="title">
+             <h1>CREATE USERS</h1>
+            </div>
+            <div class="des">
+             <p>Create users with passwords</p>
+            <button   onclick="document.location='/usercreate'">VIEW</button>
+            </div>
+            </div>
+   
+
+
+     
+
+   
+
+
+
+
+</body>
+</html>

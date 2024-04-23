@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Register page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class=" row justify-content-center">
+        <div class="col-sm-6 mt-4">
+          
+            <h2>POST FORM</h2>
+            {% if error %}
+                <p style="color: green;">{{error}}</p>
+            {% endif %}
+            <form action="#" method="POST">
+                <div class="form-group">
+                <label for="name">Company Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" name="c_name" required>
+                </div>
+                
+                <div class="form-group">
+                <label for="Branch">Branch</label>
+                <input type="text" class="form-control" id="email" placeholder="Enter Branch" name="branch" required>
+                </div>
+
+                <div class="form-group">
+                <label for="date">Date:</label>
+                <input type="date" class="form-control" id="pwd" placeholder="Enter Date" name="date" required>
+                </div>
+
+                <div class="form-group">
+                  <label for="pwd">Description:</label>
+                  <input type="text" class="form-control" id="pwd" placeholder=" Enter description" name="descp" required>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="pwd">Phone number:</label>
+                    <input type="text" class="form-control" id="pwd" placeholder="Phone Number" name="num" required>
+                    </div>
+
+                <input type="submit" class="btn btn-dark">        
+               
+            </form>
+        </div>
+    </div>
+  
+</div>
+
+</body>
+</html>
